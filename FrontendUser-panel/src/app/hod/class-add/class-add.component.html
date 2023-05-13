@@ -1,0 +1,18 @@
+<div class="form-group input1">
+    <label for="name">name::</label>
+    <input [(ngModel)]="name" type="text" id="firstName" class="form-control" placeholder="enter your class name" required>
+</div>
+<div class="form-group input1 class1">
+    <label for="lastName">size ::</label>
+    <input [(ngModel)]="size" type="number" id="lastName" class="form-control" placeholder="enter your class size" required>
+</div>
+<div class="form-froup">
+    <label for="faculty">faculty list</label>
+    <select [(ngModel)]="facultyId" class="form-control">
+                <option [value]="faculty['facultyId']" *ngFor="let faculty of faculties">{{faculty['name']}} </option>
+             </select>
+</div>
+<div style="margin-top: 30px;" class="form-group">
+    <button (click)=" onSave()" class="btn btn-sm btn-success">save</button>
+    <button (click)=" onCancel()" style="margin-left: 40px;" class="btn btn-sm btn-danger">cancel</button>
+</div>

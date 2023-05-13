@@ -1,0 +1,352 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">User Panel</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a routerLink="/home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a routerLink="/about" class="nav-link">About</a></li>
+            <li class="nav-item"><a routerLink="/contact-us" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a routerLink="/studentHome" class="nav-link">Student</a></li>
+            <li class="nav-item"><a routerLink="/principalHome" class="nav-link">Principal</a></li>
+            <li class="nav-item"><a routerLink="/hodHome" class="nav-link">HOD</a></li>
+            <li class="nav-item"><a routerLink="/facultyHome" class="nav-link">Faculty</a></li>
+
+        </ul>
+    </div>
+
+</nav>
+
+<div class="container" style="margin-top: 20px;">
+    <router-outlet></router-outlet>
+</div> -->
+
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">CIMS</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a routerLink="/home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/contact-us" class="nav-link">Contact Us</a>
+          </li>
+          <li style="margin-left: 680px" class="nav-item">
+            <a routerLink="/studentHome" class="nav-link ">Student</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/principalHome" class="nav-link ">Principal</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/hodHome" class="nav-link ">HOD</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/facultyHome" class="nav-link ">Faculty</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item active"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/800x500');
+            "
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">CIMS</h2>
+              <p class="lead">For Your Better Future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <h2 class="text-center">College Information and Management System</h2>
+        <h2 class="text-center">Our Success Story</h2>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img
+                src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8aW5ub3ZhdGlvbnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60/500x300 "
+                class="card-img-top"
+                alt="... "
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Innovation</h5>
+                <div class="card-text text-black-50">
+                  Vishal Shah’s chemical engineering background opened up
+                  opportunities to use technology
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img
+                src="https://images.unsplash.com/photo-1534009916851-7850ba974f9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGdyYWR1YXRpb24lMjBjYXB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/500x400 "
+                class="card-img-top"
+                alt="... "
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">NAAC Accredation</h5>
+                <div class="card-text text-black-50">
+                  GHRC is known for excellent and well qualified faculty.
+                  College boasts of 134 faculty members who hold doctorate
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img
+                src="https://images.unsplash.com/photo-1593371545424-276942d0a96a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YWx1bW5pfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/500x350 "
+                class="card-img-top"
+                alt="... "
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Alumni</h5>
+                <div class="card-text text-black-50">
+                  FLAME undergraduate students have done us proud over the years
+                  by going to well-known institutes around the world
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img
+                src="https://images.unsplash.com/photo-1532247993688-7eab533efeba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fHZpc2lvbiUyMGltcGFpcmVkfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/500x350 "
+                class="card-img-top"
+                alt="... "
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Vision</h5>
+                <div class="card-text text-black-50">
+                  To provide affordable quality education, while equipping
+                  students with knowledge and skills in their chosen stream
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="container mt-4">
+        <h2 class="text-center mb-4 p-4 text-secondary" id="our" style="color: rgb(237, 245, 245)">
+          Our Recruiters
+        </h2>
+        <div class="row">
+          <div class="card-columns">
+            <div class="card shadow border-0">
+              <img
+                class="card-img-top"
+                src="https://m.economictimes.com/thumb/msid-75184637,width-1200,height-900,resizemode-4,imgsize-432571/facebook-ap.jpg "
+                alt="Card image cap "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Facebook</h5>
+                <p class="card-text">Facebook is MNC working on application.</p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="card shadow border-0">
+              <img
+                class="card-img-top"
+                src="https://cdn.vox-cdn.com/thumbor/ba88KSux9BR4YxRoCDODtY6o95A=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/55639013/DSCF1179.0.0.jpg "
+                alt="Card
+                image cap "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Microsoft</h5>
+                <p class="card-text">
+                  Microsoft is MNC working on application and windows.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 9 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="card shadow border-0">
+              <img
+                class="card-img-top"
+                src="https://www.finsmes.com/wp-content/uploads/2016/09/google.jpg "
+                alt="Card image cap "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Google</h5>
+                <p class="card-text">
+                  Google is MNC working on application and browser , search
+                  engine.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 20 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header -->
+    <header class="bg-primary text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="font-weight-light text-white">Programs</h1>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjE4fHxjb25zdHJ1Y3Rpb24lMjBlbmdpbmVlcmluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/500x350 "
+              class="card-img-top"
+              alt="... "
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Civil</h5>
+              <div class="card-text text-black-50">
+                A Solid Project Will Be Found, When You Have Our Crew Around
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <img
+              src="https://images.unsplash.com/photo-1581090122087-bdc8968e525f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fG1lY2hhbmljYSUyMGVuZ2luZWVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/500x350 "
+              class="card-img-top"
+              alt="... "
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Mechanical</h5>
+              <div class="card-text text-black-50">
+                Cranks and wheels with piston and gears no one’s like us and not
+                even dares we the creator of machines and others despair just
+                because we are the Mechanical Engineers.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <img
+              src="https://images.unsplash.com/photo-1610018556010-6a11691bc905?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXIlMjBlbmdpbmVlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/500x350 "
+              class="card-img-top"
+              alt="... "
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Computer Science</h5>
+              <div class="card-text text-black-50">
+                I learned that computer science is not just about syntax and
+                coding. We can make a difference in people's lives by developing
+                applications..
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <img
+              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzJ8fGVsZWN0cm9uaWNzJTIwZW5naW5lZXJ8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60/500x350 "
+              class="card-img-top"
+              alt="... "
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Electronics</h5>
+              <div class="card-text text-black-50">
+                We make digital beautiful by resisting temptation of circuit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+      crossorigin="anonymous "
+    ></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js "></script>
+  </body>
+</html>

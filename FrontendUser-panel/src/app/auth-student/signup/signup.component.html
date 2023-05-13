@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="card-header">
+        <h4 style="text-align: center; font-size: x-large; font-weight: 600;">Register Student</h4>
+    </div>
+    <div class="card-body">
+        <div class="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input 
+                        required
+                        pattern="^[a-zA-z]+$"
+                        #uname="ngModel"
+                        [class.is-invalid]="uname.invalid && uname.touched"
+                        [(ngModel)]="name" type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Phone</label>
+                        <input required
+                        #uphone="ngModel"
+                        pattern="^\d{10}$"
+                        [class.is-invalid]="uphone.invalid && uphone.touched"
+                         [(ngModel)]="phone" type="tel" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input required
+                        type="email"
+                        #uemail="ngModel"
+                        pattern="^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$"
+                        [class.is-invalid]="uemail.invalid && uemail.touched"
+                        [(ngModel)]="email" type="email" class="form-control">
+
+                        <small [class.d-none]="uemail.valid || uemail.untouched">
+                            Email is required</small>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input 
+                        required
+                        type="password"
+                        #pass="ngModel"
+                        pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}"
+                        [class.is-invalid]="pass.invalid && pass.touched"
+                        [(ngModel)]="password" type="password" class="form-control">
+
+                        <small [class.d-none]="pass.valid || pass.untouched">
+                            Password is required(Password should contain One uppercase one
+                             lower case and One number)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button (click)="addStudents()" class="btn btn-success">Register</button>
+                <a style="margin-left: 10px;" routerLink="/auth-student/login" class="btn btn-info">Login here</a>
+            </div>
+        </div>
+    </div>
+</div>

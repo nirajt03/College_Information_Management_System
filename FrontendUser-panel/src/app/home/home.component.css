@@ -1,0 +1,64 @@
+body {
+    /* background-color: #bdc3c7; */
+    /* background: linear-gradient(to left, #283593, #1976d2);
+    font-family: 'Montserrat', sans-serif; */
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.lnr {
+    display: inline-block;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.05em;
+    stroke-width: 1;
+}
+
+.services-icon {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+bgc2,
+.vLine,
+.hLine .font-weight-light text-white {
+    background-color: #2c3e50;
+}
+
+.quote-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.services-icon {
+    font-size: 60px;
+    margin-left: 2rem;
+}
+
+.h1{
+    color: black;
+}
+
+#our{
+    color: black;
+}

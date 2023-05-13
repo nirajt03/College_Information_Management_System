@@ -1,0 +1,28 @@
+<div class="container" style="margin-top: 50px;">
+    <div>
+        <h4>faculty list</h4>
+    </div>
+    <table class="table striped bordered">
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>address</th>
+            <th>phone</th>
+            <th>classroom</th>
+            <th>action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users;let index=index">
+                <td>{{index+1}}</td>
+                <td>{{user['firstName']}} {{user['lastName']}}</td>
+                <td>{{user['address']}}</td>
+                <td>{{user['phone']}}</td>
+                <td>{{user['name']}}</td>
+                <td>
+                    <button (click)="onEdit(user)" class="btn btn-sm btn-success">edit</button>
+                    <button (click)="onDelete(user['id'])" style="margin-left:10px" class="btn btn-sm btn-danger">delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

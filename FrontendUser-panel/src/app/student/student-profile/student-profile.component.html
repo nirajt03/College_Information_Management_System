@@ -1,0 +1,134 @@
+<!--
+<div class="card">
+    <div class="card-header">
+      <h4>Student List</h4>
+    </div>
+    <div class="card-body">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>profilepic</th>
+            <th>Name</th>
+            <th>DateOfBirth</th>
+            <th>gender</th>
+            <th>address</th>
+            <th>phone</th>
+            <th>email</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of studentProfile; let index = index">
+            <td>{{index + 1}}</td>
+            <td>
+              <img *ngIf="student['profilePic']" class="product-image" src="http://localhost:4000/image/{{student['profilePic']}}" alt="">
+            </td>
+            <td>{{student['name']}}</td>
+            <td>{{student['DateOfBirth']}}</td>
+            <td>{{student['gender']}}</td>
+            <td>{{student['address']}}</td>
+            <td>{{student['phone']}}</td>
+            <td>{{student['email']}}</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+-->
+<div class="card">
+    <div class="card-header">
+        <h4>Student Profile</h4>
+    </div>
+    <div class="card-body">
+        <div class="table-success">personal Info
+            <button (click)="onEdit()" style="margin-left: 10px;" class="btn btn-warning btn-sm">Edit</button>
+        </div><br>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">gender</th>
+                    <th scope="col">address</th>
+                    <th scope="col">Contact No</th>
+                    <th scope="col">Email-id</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentProfile; let index = index">
+                    <td>{{student['name']}}</td>
+                    <td>{{student['gender']}}</td>
+                    <td>{{student['address']}}</td>
+                    <td>{{student['phone']}}</td>
+                    <td>{{student['email']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <div class="table-success">SSC Info
+            <button (click)="onSSCEdit()" style="margin-left: 10px;" class="btn btn-warning btn-sm">Edit</button>
+        </div><br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">courseName</th>
+                    <th scope="col">board</th>
+                    <th scope="col">Aggregate</th>
+                    <th scope="col">YOP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentProfile; let index = index">
+                    <td>{{student['sscCourse']}}</td>
+                    <td>{{student['sscBoard']}}</td>
+                    <td>{{student['sscAggregate']}}</td>
+                    <td>{{student['sscYOP']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <div class="table-success">HSC Info</div>
+        <button (click)="onHSCEdit()" style="margin-left: 10px;" class="btn btn-warning btn-sm">Edit</button>
+        <br>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">courseName</th>
+                    <th scope="col">board</th>
+                    <th scope="col">Aggregate</th>
+                    <th scope="col">YOP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentProfile; let index = index">
+                    <td>{{student['hscCourse']}}</td>
+                    <td>{{student['hscBoard']}}</td>
+                    <td>{{student['hscAggregate']}}</td>
+                    <td>{{student['hscYOP']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-success">Diploma Info</div>
+        <button (click)="onDiplomaEdit()" style="margin-left: 10px;" class="btn btn-warning btn-sm">Edit</button>
+        <br>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">courseName</th>
+                    <th scope="col">board</th>
+                    <th scope="col">Aggregate</th>
+                    <th scope="col">YOP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentProfile; let index = index">
+                    <td>{{student['Course']}}</td>
+                    <td>{{student['university']}}</td>
+                    <td>{{student['Aggregate']}}</td>
+                    <td>{{student['YOP']}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

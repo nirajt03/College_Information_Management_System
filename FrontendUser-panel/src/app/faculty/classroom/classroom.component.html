@@ -1,0 +1,43 @@
+<div class="container" style="margin-top: 50px;">
+    <!-- <div>
+        <h4>class list</h4>
+    </div> -->
+    <div class="card-header">
+        <h4>Class Details</h4>
+    </div>
+    <table class="table striped bordered">
+        <thead>
+            <th>Id</th>
+            <th>Venue</th>
+            <th>Capacity</th>
+            <th>Faculty</th>
+            <th>Course</th>
+            <th>Timing</th>
+        </thead>
+        <!-- <thead>
+            <th>Id</th>
+            <th>Room</th>
+            <th>Capacity</th>
+            <th>DateTime</th>
+        </thead> -->
+        <tbody>
+            <tr *ngFor="let user of users;let index=index">
+                <td>{{index+1}}</td>
+                <td>{{user['venue']}}</td>
+                <td>{{user['size']}}</td>
+                <td>{{user['name']}}</td>
+                <td>{{user['courseName']}}</td>
+                <td>{{user['timing']}}</td>
+            </tr>
+        </tbody>
+        <!-- <tbody>
+            <tr *ngFor="let user of users;let index=index">
+                <td>{{index+1}}</td>
+                <td>{{user['Name']}}</td>
+                <td>{{user['size']}}</td>
+                <td>{{user['DateTime']}}</td>
+
+            </tr>
+        </tbody> -->
+    </table>
+</div>

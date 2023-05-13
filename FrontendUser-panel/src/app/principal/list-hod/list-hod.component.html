@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header">
+        <h4>HOD List</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>address</th>
+                    <th>phone</th>
+                    <th>email</th>
+                    <!-- <th>Actions</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let hod of hodlist; let index = index">
+                    <td>{{index + 1}}</td>
+                    <td>{{hod['name']}}</td>
+                    <td>{{hod['address']}}</td>
+                    <td>{{hod['phone']}}</td>
+                    <td>{{hod['email']}}</td>
+                    <!-- <td>
+                        <button (click)="updateStatus(hod)" [class.btn-success]="hod['approve'] == 0" [class.btn-danger]="hod['approve'] == 1" class="btn btn-sm">{{hod['approve'] == 0 ? 'approve' : 'disapprove'}}</button>
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

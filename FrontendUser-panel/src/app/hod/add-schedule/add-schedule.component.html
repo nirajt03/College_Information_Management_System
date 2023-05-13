@@ -1,0 +1,66 @@
+<div class="card">
+    <div class="card-header">
+        <h4>{{schedule ? 'Update' : 'Add'}} News</h4>
+    </div>
+    <div class="card-body">
+        <div class="form">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Course Name</label>
+                        <input [(ngModel)]="courseName" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Subject Name</label>
+                        <input [(ngModel)]="subjectName" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Time</label>
+                        <input [(ngModel)]="timing" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Lecture No</label>
+                        <input [(ngModel)]="lecture_no" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Semester</label>
+                        <input [(ngModel)]="semester" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Duration</label>
+                        <input [(ngModel)]="allotedTime" type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <button (click)="onUpdate()" class="btn btn-success">{{schedule  ? 'Update' : 'Add'}}</button>
+                <a style="margin-left: 10px;" routerLink="/hodHome/hod/schedule-list" class="btn btn-danger">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="row">
+    <div routerLink="/student-list" class="col-md-3">
+        <div class="info info-orange">
+            <div class="header">Total Student</div>
+            <span *ngFor="let count of allStudentCount;">{{count['countNo']}}</span>
+            <img src="assets/user.png" alt="">
+        </div>
+    </div>
+    <div routerLink="/faculty-list" class="col-md-3">
+        <div class="info info-brown">
+            <div class="header">Faculties</div>
+            <span *ngFor="let count of allFacultyCount;">{{count['countNo']}}</span>
+            <img src="assets/company.png" alt="">
+        </div>
+    </div>
+    <div routerLink="/hod-list" class="col-md-3">
+        <div class="info info-blue">
+            <div class="header">Hod</div>
+            <span *ngFor="let count of allHodCount;">{{count['countNo']}}</span>
+            <img src="assets/company.png" alt="">
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+<!-- <div class="card border-success mb-3">
+    <div class="card-header border-success">
+        <h4>Placed Student List</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped  ">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Company</th>
+                    <th>Joblocation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of placedStudent; let index = index">
+                    <td>{{index + 1}}</td>
+                    <td>{{student['StudentName']}}</td>
+                    <td>{{student['email']}}</td>
+                    <td>{{student['courseName']}}</td>
+                    <td>{{student['name']}}</td>
+                    <td>{{student['location']}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->

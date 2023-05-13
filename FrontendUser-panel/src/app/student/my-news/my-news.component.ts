@@ -1,0 +1,37 @@
+import { Component, OnInit } from '@angular/core';
+import { StudentServiceService } from '../student-service.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-my-news',
+  templateUrl: './my-news.component.html',
+  styleUrls: ['./my-news.component.css']
+})
+export class MyNewsComponent implements OnInit {
+
+  newsDetails = []
+
+  constructor( 
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private StudentServiceService: StudentServiceService 
+    ) { }
+
+  ngOnInit(): void {
+    this.loadNewsDetails()
+  }
+
+  loadNewsDetails(){
+      this.StudentServiceService.getNewsDetails().subscribe(response => {
+      if (response['status'] == 'success') {
+        this.newsDetails = response['data']
+        console.log(this.newsDetails)
+      } else {
+        console.log(response['error'])
+      }
+    })
+  }
+
+}
+
+

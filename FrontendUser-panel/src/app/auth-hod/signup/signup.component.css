@@ -1,0 +1,35 @@
+.header{
+    text-align: center;
+    margin: 20px;
+    font-weight: 800;
+    font-size: 30px;
+}
+.border{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.header{
+    text-align: center;
+    margin: 20px;
+    font-weight: 800;
+    font-size: 30px;
+}
+.back-image{
+   display: block;
+   position: relative;
+   overflow: hidden;
+
+}
+/* image{
+    display: block;
+    position: absolute;
+    
+} */
+
+.back-image img{
+    width: auto;
+    height: 800px;
+}

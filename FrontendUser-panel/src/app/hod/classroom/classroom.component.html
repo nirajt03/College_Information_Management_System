@@ -1,0 +1,31 @@
+<div class="container" style="margin-top: 50px;">
+    <div class="card-header">
+        <h4>Class List</h4>
+        <button (click)="addclassroom()" style="margin-bottom: 10px;" class="btn btn-sm btn-success float-right">add classroom</button>
+    </div>
+    <!-- <div>
+        <h4>Class list</h4>
+        <button (click)="addclassroom()" style="margin-bottom: 10px;" class="btn btn-sm btn-success float-right">add classroom</button>
+    </div> -->
+    <table class="table striped bordered">
+        <thead>
+            <th>Id</th>
+            <th>Room</th>
+            <th>Capacity</th>
+            <th>Faculty</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users;let index=index">
+                <td>{{index+1}}</td>
+                <td>{{user['Name']}}</td>
+                <td>{{user['size']}}</td>
+                <td>{{user['name']}}</td>
+                <td>
+                    <button (click)="onEdit(user)" class="btn btn-sm btn-success">edit</button>
+                    <button (click)="onDelete(user['id'])" style="margin-left:10px" class="btn btn-sm btn-danger">delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

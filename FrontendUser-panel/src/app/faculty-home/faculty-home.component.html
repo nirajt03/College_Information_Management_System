@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Faculty Panel</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a routerLink="/facultyHome" class="nav-link">Home</a></li>
+            <li class="nav-item"><a routerLink="/facultyHome/faculty/ScheduleInfo" class="nav-link">Schedule</a></li>
+            <li class="nav-item"><a routerLink="/facultyHome/faculty/ClassRoomInfo" class="nav-link">ClassRoom</a></li>
+            <li class="nav-item"><a routerLink="/facultyHome/faculty/NewsInfo" class="nav-link">News</a></li>
+
+            <li class="nav-item"><a routerLink="" class="nav-link">Logout</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="container" style="margin-top: 20px;">
+    <router-outlet></router-outlet>
+</div>

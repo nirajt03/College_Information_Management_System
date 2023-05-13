@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="card-header">
+        <h4>Add Attendence</h4>
+    </div>
+    <div class="card-body">
+        <div class="form">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Course Name</label>
+                        <input [(ngModel)]="courseName" type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Subject Name</label>
+                        <input [(ngModel)]="subjectName" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Class Name</label>
+                        <input [(ngModel)]="className" type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Student Name</label>
+                        <input [(ngModel)]="studentName" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Date</label>
+                        <input [(ngModel)]="date" type="date" class="form-control">
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <button (click)="addAttendence()" class="btn btn-success">Add Attendence</button>
+                <a style="margin-left: 10px;" routerLink="/faculty/add-attendence" class="btn btn-info">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>

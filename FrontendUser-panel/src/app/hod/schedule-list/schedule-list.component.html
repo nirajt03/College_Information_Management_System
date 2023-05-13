@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-header">
+        <button (click)="addSchedule()" class="btn btn-success btn-sm float-right">Add</button>
+        <h4>Schedule</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Venue</th>
+                    <th>Subject Name</th>
+                    <th>Lecture No</th>
+                    <th>Timing</th>
+                    <th>Duration</th>
+                    <th>Semester</th>
+                    <!-- <th>Actions</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let schedule of scheduleDetails; let index = index">
+                    <td>{{index + 1}}</td>
+                    <td>{{schedule['venue']}}</td>
+                    <td>{{schedule['subjectName']}}</td>
+                    <td>{{schedule['lecture_no']}}</td>
+                    <td>{{schedule['timing']}}</td>
+                    <td>{{schedule['allotedTime']}}</td>
+                    <td>{{schedule['semester']}}</td>
+                    <!-- <td>
+                        <button (click)="onEdit(schedule)" style="margin-left: 10px;" class="btn btn-warning btn-sm">Edit</button>
+                        <button style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

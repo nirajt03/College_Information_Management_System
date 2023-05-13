@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Principal Panel</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="/principalHome" class="nav-link">Home</a>
+      </li>
+     
+      <li class="nav-item">
+        <a routerLink="/principalHome/principal/list-hod" class="nav-link"
+          >HOD List</a
+        >
+      </li>
+      <li class="nav-item">
+        <a routerLink="/principalHome/principal/my-teacher" class="nav-link"
+          >Faculty List</a
+        >
+      </li>
+      <li class="nav-item">
+        <a routerLink="/principalHome/principal/list-news" class="nav-link"
+          >Show News</a
+        >
+      </li>
+      <li class="nav-item">
+        <a (click)="onLogout()" routerLink="" class="nav-link">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="margin-top: 20px">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Principal Panel</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a routerLink="/principalHome" class="nav-link">Home</a></li>
+            <li class="nav-item"><a routerLink="/principalHome/principals/principalProfile" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a routerLink="/principalHome/principals/SSCInfo" class="nav-link">ClassRoom</a></li>
+            <li class="nav-item"><a routerLink="/principalHome/principals/HSCInfo" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a routerLink="/principalHome/principals/DiplomaInfo" class="nav-link">Student</a></li>
+            <li class="nav-item"><a routerLink="/principalHome/principals/HSCInfo" class="nav-link">HOD</a></li>
+            <li class="nav-item"><a routerLink="/principalHome/principals/NewsInfo" class="nav-link">News</a></li>
+
+            <li class="nav-item"><a routerLink="" class="nav-link">logout</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="container" style="margin-top: 20px;">
+    <router-outlet></router-outlet>
+</div> -->
