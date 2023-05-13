@@ -1,7 +1,7 @@
 # College_Information_Management_System
 Application - College information and Management System
 
-User - Panel
+A. User - Panel
 1. Student
   - signup
   - signin
@@ -76,7 +76,7 @@ User - Panel
   - announcement
   
   
-Admin_Panel
+B. Admin_Panel
 
 -Signin Admin
 -Signup Admin
