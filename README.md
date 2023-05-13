@@ -16,7 +16,6 @@ User - Panel
   - Registaration
   - announcement
 
-
 2. Faculty
   - signup
   - signin
@@ -59,7 +58,6 @@ User - Panel
   - display faculties attendence
   - announcement
 
-  
 4. Principal
   - signup
   - signin
